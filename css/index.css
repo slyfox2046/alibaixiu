@@ -3,9 +3,39 @@ ul {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #f5f5f5;
+}
+.container {
+  background-color: #fff;
+}
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+  }
+}
+@media screen and (max-width: 991px) {
+  article {
+    margin-top: 10px;
+  }
+  .nav li {
+    float: left;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav li a {
+    font-size: 12px;
+    padding-left: 3px;
+  }
+  .news li {
+    width: 50% !important;
+  }
+  .news li:nth-child(1) {
+    width: 100% !important;
+  }
+  .publish h3 {
+    font-size: 14px;
   }
 }
 header {
